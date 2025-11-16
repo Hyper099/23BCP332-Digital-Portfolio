@@ -1,0 +1,230 @@
+.leadership {
+  background: var(--bg-primary);
+}
+
+.leadership-content {
+  display: grid;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.leadership-card {
+  background: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+}
+
+.leadership-card:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+  transform: translateY(-2px);
+}
+
+.leadership-header {
+  margin-bottom: 1.5rem;
+}
+
+.leadership-title-section h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.leadership-role {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.leadership-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.team-size {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.leadership-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.leadership-section {
+  margin-bottom: 1.5rem;
+}
+
+.leadership-section h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.responsibilities-list {
+  list-style: none;
+  padding: 0;
+}
+
+.responsibilities-list li {
+  padding: 0.8rem 0 0.8rem 2rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.responsibilities-list li:last-child {
+  border-bottom: none;
+}
+
+.responsibilities-list li::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.dynamics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dynamics-item {
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.dynamics-item h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dynamics-item p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.achievement-item {
+  padding: 1rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  border-left: 3px solid #38a169;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.contributions-highlight {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.contributions-highlight strong {
+  color: var(--primary-color);
+  font-size: 1.05rem;
+}
+
+.leadership-summary {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  color: white;
+  border: 1px solid var(--border-color);
+}
+
+.leadership-summary h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.insight-card {
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.insight-card:hover {
+  background: var(--bg-secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.3);
+}
+
+.insight-card h4 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+}
+
+.insight-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .leadership-card {
+    padding: 1.5rem;
+  }
+
+  .leadership-title-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .dynamics-grid,
+  .achievements-grid,
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-summary {
+    padding: 1.5rem;
+  }
+}

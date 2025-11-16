@@ -1,0 +1,248 @@
+.global-awareness {
+  background: var(--bg-secondary);
+}
+
+.global-content {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.case-study-card {
+  background: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+}
+
+.case-study-card:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+  transform: translateY(-2px);
+}
+
+.case-study-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.global-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.case-study-header h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+}
+
+.global-issue-section {
+  margin-bottom: 2rem;
+}
+
+.global-issue-section h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.global-issue-section p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  padding: 1.2rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 4px solid #e53e3e;
+}
+
+.project-connection {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(102, 126, 234, 0.15);
+  border-radius: 6px;
+  color: var(--text-secondary);
+}
+
+.project-connection strong {
+  color: var(--primary-color);
+}
+
+.ethical-section {
+  margin-bottom: 2rem;
+}
+
+.ethical-section h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ethical-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ethical-list li {
+  padding: 0.8rem 0 0.8rem 2rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ethical-list li:last-child {
+  border-bottom: none;
+}
+
+.ethical-list li::before {
+  content: '⚖️';
+  position: absolute;
+  left: 0;
+}
+
+.analysis-section,
+.reflection-section,
+.impact-section {
+  margin-bottom: 1.5rem;
+}
+
+.analysis-section h4,
+.reflection-section h4,
+.impact-section h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.analysis-section p,
+.reflection-section p,
+.impact-section p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  padding: 1.2rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.impact-section {
+  padding: 1.5rem;
+  background: rgba(56, 161, 105, 0.15);
+  border-radius: 8px;
+  border-left: 4px solid #38a169;
+}
+
+.impact-section p {
+  background: transparent;
+  padding: 0;
+}
+
+.ethical-principles {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ethical-principles h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.principle-card {
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-top: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.principle-card:hover {
+  background: var(--bg-tertiary);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.3);
+}
+
+.principle-card h4 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+}
+
+.principle-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.global-perspective-statement {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  color: white;
+  border: 1px solid var(--border-color);
+}
+
+.global-perspective-statement blockquote {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  font-style: italic;
+  margin: 0;
+}
+
+.global-perspective-statement p {
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 1rem;
+}
+
+.global-perspective-statement p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .case-study-card {
+    padding: 1.5rem;
+  }
+
+  .case-study-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ethical-principles {
+    padding: 1.5rem;
+  }
+
+  .global-perspective-statement {
+    padding: 1.5rem;
+  }
+
+  .global-perspective-statement blockquote {
+    font-size: 1rem;
+  }
+}

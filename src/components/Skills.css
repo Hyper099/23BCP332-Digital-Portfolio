@@ -1,0 +1,226 @@
+.skills {
+  background: var(--bg-secondary);
+}
+
+.skills-content {
+  margin-top: 2rem;
+}
+
+.skill-category-section {
+  margin-bottom: 4rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.category-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.category-header h3 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+}
+
+.skill-card:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+  transform: translateY(-2px);
+}
+
+.skill-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.skill-card-header h4 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.proficiency-badge {
+  background: var(--bg-tertiary);
+  color: var(--primary-color);
+  padding: 0.375rem 0.875rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: 1px solid var(--border-color);
+}
+
+.skill-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.proficiency-bar {
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.proficiency-fill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Dynamic width based on data attribute */
+.proficiency-fill[data-proficiency="90"] { width: 90%; }
+.proficiency-fill[data-proficiency="88"] { width: 88%; }
+.proficiency-fill[data-proficiency="85"] { width: 85%; }
+.proficiency-fill[data-proficiency="82"] { width: 82%; }
+.proficiency-fill[data-proficiency="80"] { width: 80%; }
+.proficiency-fill[data-proficiency="75"] { width: 75%; }
+
+.skill-artifacts h5 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+
+.skill-artifacts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-artifacts ul li {
+  padding: 0.6rem 0 0.6rem 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.skill-artifacts ul li:last-child {
+  border-bottom: none;
+}
+
+.skill-artifacts ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Artifacts Showcase */
+.artifacts-showcase {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.artifacts-showcase h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.code-example {
+  margin-bottom: 2rem;
+}
+
+.code-header {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px 6px 0 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.code-block {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 0 0 8px 8px;
+  overflow-x: auto;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.design-example, .presentation-example {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.design-example h4,
+.presentation-example h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.design-example p,
+.presentation-example p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 1.5rem;
+  }
+
+  .category-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .artifacts-showcase {
+    padding: 1.5rem;
+  }
+
+  .code-block {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}

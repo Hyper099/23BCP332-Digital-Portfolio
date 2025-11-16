@@ -1,0 +1,274 @@
+.future-aspirations {
+  background: var(--bg-primary);
+}
+
+.aspirations-content {
+  margin-top: 0.75rem;
+}
+
+.aspirations-section {
+  margin-bottom: 1.75rem;
+}
+
+.section-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.section-icon {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.section-title-with-icon h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.goals-timeline {
+  display: grid;
+  gap: 0.875rem;
+}
+
+.goal-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 0.875rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+}
+
+.goal-card:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+  transform: translateX(3px);
+}
+
+.timeline-marker {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: 2px solid var(--primary-color);
+  flex-shrink: 0;
+}
+
+.goal-content h4 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.goal-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goal-content ul li {
+  padding: 0.375rem 0 0.375rem 1.25rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.8rem;
+}
+
+.goal-content ul li:last-child {
+  border-bottom: none;
+}
+
+.goal-content ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.study-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.875rem;
+}
+
+.study-area-card {
+  padding: 0.875rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  border-top: 4px solid var(--primary-color);
+  transition: all 0.2s ease;
+}
+
+.study-area-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  background: var(--bg-tertiary);
+}
+
+.study-area-card h4 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.study-area-card > p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.learning-path {
+  padding: 0.75rem;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  border-left: 3px solid var(--secondary-color);
+}
+
+.learning-path strong {
+  color: var(--text-primary);
+  font-size: 0.825rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.learning-path ul {
+  list-style: none;
+  padding: 0;
+}
+
+.learning-path ul li {
+  padding: 0.3rem 0 0.3rem 1rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  font-size: 0.75rem;
+}
+
+.learning-path ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #38a169;
+  font-weight: bold;
+}
+
+.strategies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.875rem;
+}
+
+.strategy-card {
+  padding: 0.875rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.strategy-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.strategy-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.strategy-card h4 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.strategy-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.strategy-card ul li {
+  padding: 0.35rem 0 0.35rem 1rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.75rem;
+}
+
+.strategy-card ul li:last-child {
+  border-bottom: none;
+}
+
+.strategy-card ul li::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.commitment-statement {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  color: white;
+  border: 1px solid var(--border-color);
+}
+
+.commitment-statement h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.commitment-statement p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.75rem;
+}
+
+.commitment-statement p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .goal-card {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .timeline-marker {
+    margin: 0 auto;
+  }
+
+  .study-areas-grid,
+  .strategies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commitment-statement {
+    padding: 1rem;
+  }
+
+  .commitment-statement p {
+    font-size: 0.875rem;
+  }
+}

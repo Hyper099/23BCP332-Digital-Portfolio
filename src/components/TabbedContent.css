@@ -1,0 +1,128 @@
+.tabbed-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-navigation {
+  position: sticky;
+  top: 0;
+  background: var(--bg-primary);
+  border-bottom: 2px solid var(--border-color);
+  z-index: 100;
+  padding: 0 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-container {
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+}
+
+.tabs-container::-webkit-scrollbar {
+  height: 3px;
+}
+
+.tabs-container::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+.tabs-container::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.25rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: 0.3px;
+}
+
+.tab-button:hover {
+  color: var(--text-primary);
+  background: rgba(96, 165, 250, 0.08);
+  border-bottom-color: rgba(96, 165, 250, 0.3);
+}
+
+.tab-button.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  background: rgba(96, 165, 250, 0.1);
+}
+
+.tab-icon {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tab-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tab-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 1rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Remove extra spacing from sections in tabbed view */
+.tab-content section {
+  margin-bottom: 0 !important;
+  padding: 0.5rem 0 !important;
+}
+
+.tab-content .section-header {
+  margin-bottom: 1rem !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tabs-navigation {
+    padding: 0 0.5rem;
+  }
+
+  .tab-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .tab-icon {
+    font-size: 0.95rem;
+  }
+
+  .tab-label {
+    font-size: 0.85rem;
+  }
+
+  .tab-content {
+    padding: 1rem 0.75rem;
+  }
+}

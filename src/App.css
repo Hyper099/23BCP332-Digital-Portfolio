@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  display: flex;
+}
+
+/* Fixed Sidebar - Left 28% */
+.sidebar-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 28%;
+  height: 100vh;
+  background: var(--bg-primary);
+  border-right: 1px solid var(--border-color);
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Scrollable Content Area - Right 72% */
+.content-scroll-area {
+  margin-left: 28%;
+  width: 72%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.content-wrapper {
+  padding: 1rem;
+}
+
+/* Remove padding from main content sections */
+.content-scroll-area section {
+  min-height: 0;
+  padding: 1rem 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section Headers - Compact */
+.section-header {
+  text-align: left;
+  margin-bottom: 0.75rem;
+  padding-top: 0.25rem;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.header-line {
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 0.5rem 0;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sidebar-fixed {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .content-scroll-area {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .content-wrapper {
+    padding: 0.5rem;
+  }
+
+  .content-scroll-area section {
+    padding: 1rem 0;
+  }
+}
+

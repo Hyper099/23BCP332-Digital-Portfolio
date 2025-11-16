@@ -1,0 +1,365 @@
+.conclusion {
+  background: var(--bg-secondary);
+}
+
+.conclusion-content {
+  margin-top: 2rem;
+}
+
+.conclusion-section {
+  margin-bottom: 3rem;
+}
+
+.section-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.section-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.section-title-with-icon h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+}
+
+.achievements-summary {
+  display: grid;
+  gap: 2rem;
+}
+
+.achievement-category {
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  border-left: 3px solid var(--primary-color);
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+}
+
+.achievement-category:hover {
+  border-left-width: 4px;
+  transform: translateX(3px);
+}
+
+.achievement-category h4 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.achievement-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement-category ul li {
+  padding: 0.7rem 0 0.7rem 2rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.achievement-category ul li:last-child {
+  border-bottom: none;
+}
+
+.achievement-category ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #38a169;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.lesson-card {
+  padding: 1.8rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  border-top: 4px solid var(--secondary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.lesson-card h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.lesson-card p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.lesson-card p strong {
+  color: var(--primary-color);
+}
+
+.lesson-card p:last-child {
+  margin-bottom: 0;
+}
+
+.evaluation-content {
+  padding: 2rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.evaluation-intro {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.evaluation-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.evaluation-item {
+  padding: 1.2rem;
+  border-radius: 8px;
+  border-left: 4px solid;
+  transition: all 0.3s ease;
+}
+
+.evaluation-item.achieved {
+  background: rgba(56, 161, 105, 0.15);
+  border-left-color: #38a169;
+}
+
+.evaluation-item.in-progress {
+  background: rgba(237, 137, 54, 0.15);
+  border-left-color: #ed8936;
+}
+
+.evaluation-item:hover {
+  transform: translateX(5px);
+}
+
+.eval-status {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.evaluation-item.achieved .eval-status {
+  color: #38a169;
+}
+
+.evaluation-item.in-progress .eval-status {
+  color: #ed8936;
+}
+
+.evaluation-item p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.growth-areas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.growth-card {
+  padding: 1.8rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  border-left: 4px solid #ed8936;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.growth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.growth-card h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+
+.growth-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.swot-section {
+  padding: 2.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.swot-section h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.swot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.swot-card {
+  padding: 1.8rem;
+  border-radius: 12px;
+  border-top: 5px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.swot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.swot-card.strengths {
+  border-top-color: #38a169;
+  background: rgba(56, 161, 105, 0.1);
+}
+
+.swot-card.weaknesses {
+  border-top-color: #e53e3e;
+  background: rgba(229, 62, 62, 0.1);
+}
+
+.swot-card.opportunities {
+  border-top-color: #3182ce;
+  background: rgba(49, 130, 206, 0.1);
+}
+
+.swot-card.threats {
+  border-top-color: #ed8936;
+  background: rgba(237, 137, 54, 0.1);
+}
+
+.swot-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.swot-card.strengths h4 { color: #38a169; }
+.swot-card.weaknesses h4 { color: #e53e3e; }
+.swot-card.opportunities h4 { color: #3182ce; }
+.swot-card.threats h4 { color: #ed8936; }
+
+.swot-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.swot-card ul li {
+  padding: 0.6rem 0 0.6rem 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.swot-card ul li:last-child {
+  border-bottom: none;
+}
+
+.swot-card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.swot-card.strengths ul li::before { color: #38a169; }
+.swot-card.weaknesses ul li::before { color: #e53e3e; }
+.swot-card.opportunities ul li::before { color: #3182ce; }
+.swot-card.threats ul li::before { color: #ed8936; }
+
+.personal-reflection {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  color: white;
+  border: 1px solid var(--border-color);
+}
+
+.personal-reflection h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.personal-reflection blockquote {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  font-style: italic;
+  margin: 0;
+}
+
+.personal-reflection p {
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 1.5rem;
+}
+
+.personal-reflection p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .growth-areas,
+  .swot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .lessons-grid,
+  .growth-areas,
+  .swot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .swot-section,
+  .evaluation-content,
+  .personal-reflection {
+    padding: 1.5rem;
+  }
+
+  .personal-reflection blockquote {
+    font-size: 1rem;
+  }
+}
